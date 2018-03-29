@@ -11,6 +11,8 @@
     </dependencies>
     <customFonts key="customFonts">
         <array key="Avenir.ttc">
+            <string>Avenir-Book</string>
+            <string>Avenir-Heavy</string>
             <string>Avenir-Medium</string>
         </array>
     </customFonts>
@@ -90,11 +92,80 @@
         <scene sceneID="BD6-1j-nXa">
             <objects>
                 <viewController id="t8M-hw-WwC" customClass="ChannelVC" customModule="Smack" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="Fy4-5l-Rev">
+                    <view key="view" contentMode="scaleToFill" id="Fy4-5l-Rev" customClass="GradientView" customModule="Smack" customModuleProvider="target">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="CHANNELS" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1xq-Ka-WT6">
+                                <rect key="frame" x="20" y="93" width="75" height="20"/>
+                                <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="14"/>
+                                <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Y97-EN-cSo">
+                                <rect key="frame" x="259" y="88" width="46" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Smack" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="es2-lC-x7D">
+                                <rect key="frame" x="20" y="45" width="61" height="28"/>
+                                <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="20"/>
+                                <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.19287109375" green="0.24055989583333334" blue="0.4245334201388889" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="es2-lC-x7D" firstAttribute="top" secondItem="Mkc-kJ-Tnv" secondAttribute="top" constant="25" id="4no-Vd-Hdt"/>
+                            <constraint firstItem="1xq-Ka-WT6" firstAttribute="leading" secondItem="Mkc-kJ-Tnv" secondAttribute="leading" constant="20" id="yZj-qb-adh"/>
+                            <constraint firstItem="es2-lC-x7D" firstAttribute="leading" secondItem="Mkc-kJ-Tnv" secondAttribute="leading" constant="20" id="zJL-b4-YD6"/>
+                            <constraint firstItem="1xq-Ka-WT6" firstAttribute="top" secondItem="es2-lC-x7D" secondAttribute="bottom" constant="20" id="zSO-JM-Wgs"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="Mkc-kJ-Tnv"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="color" keyPath="color1of1">
+                                <color key="value" red="0.32247689440359473" green="0.30196078431372547" blue="0.84705882352941175" alpha="1" colorSpace="calibratedRGB"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="color" keyPath="color1of2">
+                                <color key="value" red="0.45243917228349673" green="0.30196078431372547" blue="0.84705882352941175" alpha="1" colorSpace="calibratedRGB"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="color" keyPath="color2of1">
+                                <color key="value" red="0.5" green="0.30196078431372547" blue="0.84705882352941175" alpha="1" colorSpace="calibratedRGB"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="color" keyPath="color2of2">
+                                <color key="value" red="0.62624782986111116" green="0.30196078431372547" blue="0.84705882352941175" alpha="1" colorSpace="calibratedRGB"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="color" keyPath="color3of1">
+                                <color key="value" red="0.72564019097222221" green="0.30196078431372547" blue="0.84705882352941175" alpha="1" colorSpace="calibratedRGB"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="color" keyPath="color3of2">
+                                <color key="value" red="0.72564019097222221" green="0.20094081903594768" blue="0.84705882352941175" alpha="1" colorSpace="calibratedRGB"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="color" keyPath="color4of1">
+                                <color key="value" red="0.3362087673611111" green="0.20094081903594768" blue="0.51033464818218954" alpha="1" colorSpace="calibratedRGB"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="color" keyPath="color4of2">
+                                <color key="value" red="0.30523003472222221" green="0.16304476868872544" blue="0.51033464818218954" alpha="1" colorSpace="calibratedRGB"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="color" keyPath="color5of1">
+                                <color key="value" red="0.20353190104166666" green="0.24132167841094773" blue="0.50980392156862742" alpha="1" colorSpace="calibratedRGB"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="color" keyPath="color5of2">
+                                <color key="value" red="0.18096245659722221" green="0.26383686938317003" blue="0.3146541819852941" alpha="1" colorSpace="calibratedRGB"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="color" keyPath="color6of1">
+                                <color key="value" red="0.0" green="0.28244581035539224" blue="0.67478873059640521" alpha="1" colorSpace="calibratedRGB"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="color" keyPath="color6of2">
+                                <color key="value" red="0.0" green="0.28244581035539224" blue="0.45413985906862742" alpha="1" colorSpace="calibratedRGB"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="color" keyPath="color7of1">
+                                <color key="value" red="0.0" green="0.28244581035539224" blue="0.79905630872140521" alpha="1" colorSpace="calibratedRGB"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="color" keyPath="color7of2">
+                                <color key="value" red="0.0" green="0.28244581035539224" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zRq-AZ-6f9" userLabel="First Responder" sceneMemberID="firstResponder"/>
