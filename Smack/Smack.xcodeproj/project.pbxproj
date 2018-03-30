@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		0052411EF2238E6F00053733 /* Pods_Smack.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 64D8E93E83A548863362032E /* Pods_Smack.framework */; };
 		681E6465206D6CC700D60C79 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 681E6464206D6CC700D60C79 /* Constants.swift */; };
+		68260EE4206DEDD500CBA337 /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68260EE3206DEDD500CBA337 /* LoginVC.swift */; };
 		68394D65206B3F65007DADDE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68394D64206B3F65007DADDE /* AppDelegate.swift */; };
 		68394D67206B3F65007DADDE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68394D66206B3F65007DADDE /* ViewController.swift */; };
 		68394D6A206B3F65007DADDE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 68394D68206B3F65007DADDE /* Main.storyboard */; };
@@ -23,6 +24,7 @@
 /* Begin PBXFileReference section */
 		64D8E93E83A548863362032E /* Pods_Smack.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Smack.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		681E6464206D6CC700D60C79 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		68260EE3206DEDD500CBA337 /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
 		68394D61206B3F65007DADDE /* Smack.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Smack.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		68394D64206B3F65007DADDE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		68394D66206B3F65007DADDE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -101,6 +103,7 @@
 			children = (
 				685A883B206C7D6200851563 /* ChatVC.swift */,
 				685A8839206C7D5000851563 /* ChannelVC.swift */,
+				68260EE3206DEDD500CBA337 /* LoginVC.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -285,6 +288,7 @@
 			files = (
 				685A883A206C7D5000851563 /* ChannelVC.swift in Sources */,
 				68394D67206B3F65007DADDE /* ViewController.swift in Sources */,
+				68260EE4206DEDD500CBA337 /* LoginVC.swift in Sources */,
 				685A883E206C8A0900851563 /* GradientView.swift in Sources */,
 				68394D65206B3F65007DADDE /* AppDelegate.swift in Sources */,
 				681E6465206D6CC700D60C79 /* Constants.swift in Sources */,
