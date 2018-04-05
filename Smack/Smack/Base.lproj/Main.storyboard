@@ -420,6 +420,9 @@
                                 <state key="normal" title="Create Account">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <action selector="createAccntPressed:" destination="arV-qI-PP1" eventType="touchUpInside" id="IQY-JH-eZm"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="CREATE AN ACCOUNT" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LxT-RB-R1V">
                                 <rect key="frame" x="95" y="60" width="185" height="24"/>
@@ -500,6 +503,7 @@
                                 </state>
                                 <connections>
                                     <action selector="createAccountBtnPressed:" destination="EOC-PB-erb" eventType="touchUpInside" id="bum-uJ-z6F"/>
+                                    <action selector="pickAvatagPressed:" destination="arV-qI-PP1" eventType="touchUpInside" id="RqK-jB-y3A"/>
                                 </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="profileDefault" translatesAutoresizingMaskIntoConstraints="NO" id="xQx-sd-ovR">
@@ -521,6 +525,7 @@
                                 </state>
                                 <connections>
                                     <action selector="createAccountBtnPressed:" destination="EOC-PB-erb" eventType="touchUpInside" id="H8n-QC-EMZ"/>
+                                    <action selector="pickBGColorPressed:" destination="arV-qI-PP1" eventType="touchUpInside" id="gKR-Ak-pOa"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -621,6 +626,10 @@
                         </variation>
                     </view>
                     <connections>
+                        <outlet property="emailTxt" destination="U3e-wt-9PE" id="Xqf-aJ-x5h"/>
+                        <outlet property="passTxt" destination="wcf-TT-Hve" id="5dL-hI-SEO"/>
+                        <outlet property="userImg" destination="xQx-sd-ovR" id="v1O-x7-vef"/>
+                        <outlet property="usernameTxt" destination="0We-og-EHL" id="vms-nU-4Hw"/>
                         <segue destination="Vm8-sq-8aU" kind="unwind" identifier="unwindToChannel" unwindAction="prepareForUnwindWithSegue:" id="bsl-9b-OdF"/>
                     </connections>
                 </viewController>
