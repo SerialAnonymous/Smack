@@ -34,8 +34,6 @@ class CreateAccountVC: UIViewController {
             avatarName = UserDataService.instance.avatarName
             if avatarName.contains("light") && bgColor == nil{
                 userImg.backgroundColor = #colorLiteral(red: 0.2549019754, green: 0.2745098174, blue: 0.3019607961, alpha: 1)
-            }else{
-                userImg.backgroundColor = #colorLiteral(red: 0.501960814, green: 0.501960814, blue: 0.501960814, alpha: 1)
             }
         }
     }
@@ -83,7 +81,6 @@ class CreateAccountVC: UIViewController {
         UIView.animate(withDuration:0.2){
             self.userImg.backgroundColor = self.bgColor
         }
-        self.userImg.backgroundColor = bgColor
     }
     func setUpView(){
         loaderBg.isHidden = true

@@ -21,7 +21,7 @@ class ProfileVC: UIViewController {
         // Do any additional setup after loading the view.
     }
     @IBAction func closeModalPressed(_ sender: Any) {
-        dismiss(animated: true, completion: nil)
+        self.dismiss(animated: true, completion: nil)
     }
     
     @IBAction func logoutPressed(_ sender: Any) {

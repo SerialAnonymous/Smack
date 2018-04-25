@@ -9,9 +9,9 @@
 import UIKit
 @IBDesignable
 class RoundedButton: UIButton {
-    @IBInspectable var cornerRaadius : CGFloat = 3.0{
+    @IBInspectable var cornerRadius: CGFloat = 3.0 {
         didSet{
-           self.layer.cornerRadius = cornerRaadius
+           self.layer.cornerRadius = cornerRadius
         }
     }
     
@@ -25,7 +25,7 @@ class RoundedButton: UIButton {
     }
     
     func setUpView(){
-        self.layer.cornerRadius = cornerRaadius
+        self.layer.cornerRadius = cornerRadius
     }
 
 }

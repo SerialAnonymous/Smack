@@ -31,11 +31,10 @@ class UserDataService{
     func returnUIColor(components: String) -> UIColor{
         let scanner = Scanner(string: components)
         let skipped = CharacterSet(charactersIn: "[], ")
-        let comma = CharacterSet(charactersIn: "[], ")
-        
+        let comma = CharacterSet(charactersIn: ",")
         scanner.charactersToBeSkipped = skipped
         
-        var r,g,b,a : NSString?
+        var r, g, b, a : NSString?
         
         scanner.scanUpToCharacters(from: comma, into: &r)
         scanner.scanUpToCharacters(from: comma, into: &g)
@@ -62,9 +61,8 @@ class UserDataService{
         id = ""
         avatarName = ""
         avatarColor = ""
-        name = ""
         email = ""
-        
+        name = ""
         AuthService.instance.isLoggedIn = false
         AuthService.instance.userEmail = ""
         AuthService.instance.authToken = ""
