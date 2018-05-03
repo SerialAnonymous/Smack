@@ -9,13 +9,14 @@
 import UIKit
 import SocketIO
 
+let manager = SocketManager(socketURL: URL(string: BASE_URL)!, config: [.log(true), .compress])
+let socket = manager.defaultSocket
+
 class SocketService: NSObject {
    static let instance = SocketService()
     override init() {
         super.init()
     }
-    
-    let socket : SocketIOClient = SocketIOClient(socketURL : URL(string: BASE_URL)!)
     
     func establishConnection(){
         socket.connect()
